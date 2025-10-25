@@ -1,0 +1,176 @@
+name: Feature Request
+description: Suggest a new feature or enhancement
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature! Please fill out the form below to help us understand your request.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have read the feature roadmap and documentation
+          required: true
+        - label: This is a feature request, not a bug report
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: Feature Type
+      description: What type of feature are you requesting?
+      options:
+        - CLI Command Enhancement
+        - New CLI Command
+        - TUI Interface Improvement
+        - IDE Integration Enhancement
+        - Performance Optimization
+        - Security Feature
+        - Enterprise Feature
+        - Analytics Feature
+        - API Enhancement
+        - Documentation Improvement
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        Describe the problem or limitation you're experiencing.
+        What workflow or use case is currently difficult or impossible?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your preferred solution
+      placeholder: |
+        How would you like this feature to work?
+        What commands, UI elements, or APIs would you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: What alternative solutions have you considered?
+      placeholder: |
+        Are there other ways to solve this problem?
+        Have you found any workarounds?
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific use cases for this feature
+      placeholder: |
+        1. As a developer, I want to... so that...
+        2. When working on large codebases, I need to...
+        3. During code reviews, it would be helpful to...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Nice to have - Would be a small improvement
+        - Moderate - Would improve my workflow
+        - High - Would significantly improve productivity
+        - Critical - Blocks important workflows
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Target Audience
+      description: Who would benefit from this feature?
+      options:
+        - Individual developers
+        - Small teams (2-10 people)
+        - Medium teams (10-50 people)
+        - Large teams (50+ people)
+        - Enterprise organizations
+        - Open source maintainers
+        - All users
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples and Mockups
+      description: Provide examples, mockups, or detailed specifications
+      placeholder: |
+        Example commands:
+        ```bash
+        hive new-feature --option value
+        ```
+        
+        Example output:
+        ```
+        Expected output here
+        ```
+        
+        You can also attach images or link to mockups.
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: Do you have ideas about how this could be implemented?
+      placeholder: |
+        If you have technical knowledge, share implementation ideas:
+        - Which components would be affected?
+        - Are there existing patterns to follow?
+        - Any technical constraints to consider?
+
+  - type: checkboxes
+    id: compatibility
+    attributes:
+      label: Compatibility Considerations
+      description: Check all that apply
+      options:
+        - label: This feature should work across all platforms (macOS, Linux, Windows)
+        - label: This feature should work in both CLI and TUI modes
+        - label: This feature should be available via IDE integrations
+        - label: This feature should support enterprise environments
+        - label: This feature requires API changes
+        - label: This feature might affect existing workflows
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other information that might be helpful
+      placeholder: |
+        - Links to similar features in other tools
+        - Research or references
+        - Community discussions
+        - Related issues or PRs
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to help implement this feature
+        - label: I would be willing to help test this feature
+        - label: I would be willing to help with documentation
+        - label: I can provide domain expertise or feedback

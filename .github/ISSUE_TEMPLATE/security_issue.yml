@@ -1,0 +1,220 @@
+name: Security Issue
+description: Report a security vulnerability (for public issues only)
+title: "[Security]: "
+labels: ["security", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **IMPORTANT: Do not report critical security vulnerabilities here!**
+        
+        For critical security issues that could compromise user data or system security:
+        - Email: security@hivetechs.com
+        - Use our [Security Advisory](https://github.com/hivetechs/hive-consensus/security/advisories/new) process
+        - We follow responsible disclosure and will credit researchers
+        
+        This form is for non-critical security concerns, configuration issues, or security enhancement requests.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have confirmed this is NOT a critical vulnerability requiring private disclosure
+          required: true
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have read the security documentation
+          required: true
+
+  - type: dropdown
+    id: security-type
+    attributes:
+      label: Security Issue Type
+      description: What type of security issue are you reporting?
+      options:
+        - Configuration Security Concern
+        - Security Enhancement Request
+        - Documentation Gap (Security)
+        - Permission/Access Control Issue
+        - Audit/Logging Concern
+        - Compliance Question
+        - Security Best Practice Suggestion
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How severe is this security concern?
+      options:
+        - Informational - General security question or suggestion
+        - Low - Minor security improvement opportunity
+        - Medium - Security configuration concern
+        - High - Potential security issue requiring attention
+      validations:
+        required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Security Concern Description
+      description: Describe the security issue or concern
+      placeholder: |
+        Clearly describe the security concern:
+        - What is the potential risk?
+        - What could an attacker potentially do?
+        - What security principle is violated?
+        - How does this affect user security?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Attack Scenario (if applicable)
+      description: Describe a potential attack scenario
+      placeholder: |
+        If this is a potential vulnerability:
+        1. How might an attacker discover this issue?
+        2. What steps would they take to exploit it?
+        3. What would be the impact of successful exploitation?
+        
+        (Remember: Only for non-critical issues suitable for public discussion)
+
+  - type: textarea
+    id: affected-components
+    attributes:
+      label: Affected Components
+      description: Which parts of HiveTechs Consensus are affected?
+      placeholder: |
+        - CLI commands: (e.g., specific commands)
+        - Configuration: (e.g., config file handling)
+        - API endpoints: (e.g., REST API, MCP tools)
+        - File handling: (e.g., file access, permissions)
+        - Network communication: (e.g., API calls, authentication)
+        - Data storage: (e.g., database, cache, logs)
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: How does the system currently behave?
+      placeholder: |
+        Describe the current behavior that raises security concerns:
+        - What happens when you perform certain actions?
+        - How are permissions currently handled?
+        - What security measures are currently in place?
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Secure Behavior
+      description: How should the system behave from a security perspective?
+      placeholder: |
+        Describe what you believe the secure behavior should be:
+        - What security controls should be in place?
+        - How should permissions be handled?
+        - What additional validation should occur?
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Relevant environment information
+      placeholder: |
+        - Platform: (e.g., macOS, Linux, Windows)
+        - Deployment: (e.g., single user, team, enterprise)
+        - Network: (e.g., corporate network, home network)
+        - Security context: (e.g., restricted environment, high-security organization)
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce (if applicable)
+      description: Steps to reproduce the security concern
+      placeholder: |
+        If this is reproducible:
+        1. Configure system with: ...
+        2. Run command: ...
+        3. Observe security concern: ...
+        
+        (Only include steps that are safe for public disclosure)
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Current Mitigation
+      description: What steps can users take to mitigate this concern?
+      placeholder: |
+        Are there current ways to mitigate this security concern?
+        - Configuration changes
+        - Operational procedures
+        - Alternative approaches
+        - Workarounds
+
+  - type: textarea
+    id: recommendations
+    attributes:
+      label: Security Recommendations
+      description: What security improvements do you recommend?
+      placeholder: |
+        Suggest specific security improvements:
+        - Additional validation checks
+        - Enhanced permission controls
+        - Better error handling
+        - Improved documentation
+        - Security configuration options
+
+  - type: checkboxes
+    id: compliance
+    attributes:
+      label: Compliance Considerations
+      description: Check any relevant compliance standards
+      options:
+        - label: This affects SOX compliance
+        - label: This affects ISO27001 compliance
+        - label: This affects GDPR compliance
+        - label: This affects PCI DSS compliance
+        - label: This affects HIPAA compliance
+        - label: This affects other regulatory requirements
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Security References
+      description: Relevant security standards, guidelines, or references
+      placeholder: |
+        Include any relevant:
+        - Security standards (e.g., OWASP guidelines)
+        - Best practice documents
+        - Similar issues in other tools
+        - Research papers or articles
+        - CVE references (if applicable)
+
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure
+      options:
+        - label: I confirm this issue is appropriate for public discussion
+        - label: I understand that critical vulnerabilities should be reported privately
+        - label: I am willing to help test security improvements
+        - label: I can provide additional information if needed privately
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Security Response Process
+        
+        - **Acknowledgment**: We will acknowledge security reports within 24 hours
+        - **Investigation**: Our security team will investigate and assess the issue
+        - **Resolution**: We will work on fixes and coordinate disclosure timing
+        - **Credit**: We provide credit to researchers who report valid security issues
+        
+        For urgent security matters, contact: security@hivetechs.com

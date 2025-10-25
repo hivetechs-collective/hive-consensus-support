@@ -1,0 +1,147 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please fill out the form below to help us understand and fix the issue.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have read the troubleshooting guide
+          required: true
+        - label: I am using the latest version of HiveTechs Consensus
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of HiveTechs Consensus are you using?
+      placeholder: "2.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform are you running on?
+      options:
+        - macOS (Intel)
+        - macOS (Apple Silicon)
+        - Linux (x86_64)
+        - Linux (ARM)
+        - Windows 10
+        - Windows 11
+        - Docker
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: Describe what happened and what you expected to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior
+      placeholder: |
+        1. Run command '...'
+        2. Use configuration '...'
+        3. Observe error '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe the expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what actually occurred
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and Error Messages
+      description: Please include relevant logs, error messages, or command output
+      placeholder: |
+        Paste logs here (use `hive logs --tail 50` to get recent logs)
+        Remember to redact any sensitive information like API keys
+      render: shell
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Configuration
+      description: Relevant configuration (with secrets redacted)
+      placeholder: |
+        Paste relevant configuration here (use `hive config show --redact-secrets`)
+      render: toml
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Additional environment information
+      placeholder: |
+        - Terminal: (e.g., iTerm2, Terminal.app, Windows Terminal)
+        - Shell: (e.g., bash, zsh, fish, PowerShell)
+        - IDE Integration: (e.g., VS Code, Vim, IntelliJ)
+        - Network: (e.g., corporate proxy, VPN)
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Bug Severity
+      description: How severe is this bug?
+      options:
+        - Low - Minor inconvenience, workaround available
+        - Medium - Affects functionality but doesn't block work
+        - High - Blocks important functionality, no workaround
+        - Critical - Application crashes or data loss
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other information that might be helpful
+      placeholder: Screenshots, recordings, related issues, etc.
+
+  - type: checkboxes
+    id: support
+    attributes:
+      label: Support
+      options:
+        - label: I would be willing to help test a fix for this issue
+        - label: I can provide additional information if needed

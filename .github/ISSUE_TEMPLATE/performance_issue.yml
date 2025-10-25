@@ -1,0 +1,225 @@
+name: Performance Issue
+description: Report slow performance or resource usage problems
+title: "[Performance]: "
+labels: ["performance", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a performance issue! Please provide detailed information to help us optimize HiveTechs Consensus.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have read the performance troubleshooting guide
+          required: true
+        - label: I have tried basic optimization steps (cache clearing, configuration tuning)
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of HiveTechs Consensus are you using?
+      placeholder: "2.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform are you running on?
+      options:
+        - macOS (Intel)
+        - macOS (Apple Silicon)
+        - Linux (x86_64)
+        - Linux (ARM)
+        - Windows 10
+        - Windows 11
+        - Docker
+        - Cloud Instance (specify type)
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware Specifications
+      description: Provide your system specifications
+      placeholder: |
+        - CPU: (e.g., Intel i7-10700K, Apple M2, AMD Ryzen 7 5800X)
+        - RAM: (e.g., 16GB, 32GB)
+        - Storage: (e.g., SSD, NVMe, HDD)
+        - Available disk space: (e.g., 100GB free)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: performance-type
+    attributes:
+      label: Performance Issue Type
+      description: What type of performance issue are you experiencing?
+      options:
+        - Slow startup time
+        - Slow command execution
+        - High memory usage
+        - High CPU usage
+        - Slow file analysis
+        - Slow consensus pipeline
+        - Slow TUI responsiveness
+        - Network latency issues
+        - Database performance
+        - Cache performance
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Performance Issue Description
+      description: Detailed description of the performance problem
+      placeholder: |
+        Describe what operation is slow and how slow it is:
+        - What command or operation is affected?
+        - How long does it take vs. how long you expect?
+        - When did you first notice this issue?
+        - Does it happen consistently or intermittently?
+    validations:
+      required: true
+
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Performance Metrics
+      description: Provide specific performance measurements
+      placeholder: |
+        Please run these commands and paste the output:
+        
+        ```bash
+        # Startup time
+        time hive --version
+        
+        # System health
+        hive health --verbose
+        
+        # Performance monitoring (run for 30 seconds)
+        hive performance monitor --duration 30s
+        
+        # Resource usage
+        ps aux | grep hive
+        top -p $(pgrep hive) # Linux
+        top -pid $(pgrep hive) # macOS
+        ```
+      render: shell
+
+  - type: textarea
+    id: codebase-info
+    attributes:
+      label: Codebase Information
+      description: Information about the codebase being analyzed
+      placeholder: |
+        - Programming language(s): (e.g., Rust, Python, JavaScript)
+        - Codebase size: (e.g., 50k lines, 500 files)
+        - Repository structure: (e.g., monorepo, multiple services)
+        - File types being analyzed: (e.g., *.rs, *.py, *.js)
+
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration
+      description: Your current Hive configuration (with secrets redacted)
+      placeholder: |
+        Please paste the output of:
+        ```bash
+        hive config show --redact-secrets
+        ```
+      render: toml
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Exact steps to reproduce the performance issue
+      placeholder: |
+        1. Configure Hive with settings: ...
+        2. Run command: hive analyze src/
+        3. Observe slow performance: takes 30s instead of expected 5s
+        4. Monitor resource usage during execution
+    validations:
+      required: true
+
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Performance Comparison
+      description: How does this compare to expected performance?
+      placeholder: |
+        - Current performance: (e.g., takes 30 seconds)
+        - Expected performance: (e.g., should take <5 seconds)
+        - Previous performance: (e.g., used to take 3 seconds in version X)
+        - Comparison with TypeScript version: (e.g., TypeScript took 10 seconds)
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: Additional environment information that might affect performance
+      placeholder: |
+        - Network: (e.g., fast broadband, corporate network, VPN)
+        - Disk I/O: (e.g., high disk usage, SSD vs HDD)
+        - Other running applications: (e.g., Docker, IDEs, browsers)
+        - System load: (e.g., high CPU usage from other processes)
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact Level
+      description: How much does this performance issue impact your work?
+      options:
+        - Low - Minor slowdown, doesn't affect productivity
+        - Medium - Noticeable slowdown, some impact on workflow
+        - High - Significant slowdown, major impact on productivity
+        - Critical - Performance so poor that tool is unusable
+    validations:
+      required: true
+
+  - type: textarea
+    id: workarounds
+    attributes:
+      label: Workarounds Tried
+      description: What have you tried to improve performance?
+      placeholder: |
+        - Configuration changes: (e.g., reduced cache size, changed worker count)
+        - System optimizations: (e.g., closed other applications, restarted system)
+        - Alternative approaches: (e.g., analyzed smaller portions of code)
+        - Previous versions: (e.g., downgraded to version X which was faster)
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other information that might help diagnose the performance issue
+      placeholder: |
+        - Performance profiles or traces
+        - Screenshots of resource monitors
+        - Logs showing slow operations
+        - Correlation with specific operations or file types
+
+  - type: checkboxes
+    id: testing
+    attributes:
+      label: Testing Support
+      options:
+        - label: I can provide access to a representative codebase for testing
+        - label: I can test performance improvements and provide feedback
+        - label: I can run additional diagnostic commands as requested
+        - label: I can provide system access for debugging (enterprise customers)

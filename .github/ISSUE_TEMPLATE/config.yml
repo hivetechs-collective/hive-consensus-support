@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/hivetechs-collective/hive-consensus-support/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📚 Documentation
+    url: https://hivetechs.io/docs
+    about: Check our comprehensive documentation for guides and tutorials
+  - name: 🔒 Security Issues
+    url: mailto:security@hivetechs.io
+    about: Report critical security vulnerabilities privately via email
+  - name: 🏢 Subscriber Support
+    url: mailto:support@hivetechs.io
+    about: Active subscribers can contact our support team (24-hour response)

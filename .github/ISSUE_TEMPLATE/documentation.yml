@@ -1,0 +1,250 @@
+name: Documentation Issue
+description: Report missing, incorrect, or unclear documentation
+title: "[Docs]: "
+labels: ["documentation", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve our documentation! Clear, accurate documentation is essential for user success.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed these steps
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have checked multiple documentation sources (README, guides, API reference)
+          required: true
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: Which type of documentation needs improvement?
+      options:
+        - README.md
+        - Installation Guide
+        - User Guide
+        - API Reference
+        - Troubleshooting Guide
+        - Migration Guide
+        - Enterprise Guide
+        - CLI Help Text
+        - Error Messages
+        - Code Comments
+        - Examples/Tutorials
+        - Architecture Documentation
+        - Contributing Guide
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What type of documentation issue is this?
+      options:
+        - Missing Documentation - Information doesn't exist
+        - Incorrect Information - Information is wrong or outdated
+        - Unclear Instructions - Information is confusing or ambiguous
+        - Broken Links - Links don't work or go to wrong places
+        - Missing Examples - Need code examples or use cases
+        - Formatting Issues - Poor formatting or structure
+        - Outdated Content - Information is obsolete
+        - Incomplete Coverage - Topic is partially documented
+        - Accessibility Issues - Documentation not accessible
+        - Translation Issues - Non-English documentation problems
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Where is the problematic documentation located?
+      placeholder: |
+        Please provide specific location(s):
+        - File name: (e.g., USER_GUIDE.md)
+        - Section: (e.g., "Core Features > Code Analysis")
+        - Line numbers: (if applicable)
+        - URL: (if web documentation)
+        - Command: (e.g., `hive help analyze`)
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-content
+    attributes:
+      label: Current Content
+      description: What does the current documentation say?
+      placeholder: |
+        Quote the current text that is problematic:
+        
+        "Current documentation says: ..."
+        
+        Or describe what's missing:
+        "There is no documentation for..."
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: Detailed description of the documentation problem
+      placeholder: |
+        Clearly describe the issue:
+        - What is wrong or missing?
+        - Why is this confusing or problematic?
+        - What questions are left unanswered?
+        - How does this affect users?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-content
+    attributes:
+      label: Expected Content
+      description: What should the documentation say instead?
+      placeholder: |
+        Describe what the documentation should include:
+        - Correct information
+        - Clear instructions
+        - Helpful examples
+        - Missing sections
+        
+        If you know the correct information, please share it here.
+
+  - type: textarea
+    id: suggested-improvement
+    attributes:
+      label: Suggested Improvement
+      description: How would you improve this documentation?
+      placeholder: |
+        Provide specific suggestions:
+        - Rewrite suggestions
+        - Additional sections needed
+        - Better examples
+        - Improved structure
+        - Cross-references to add
+        
+        Feel free to write proposed text if you have ideas.
+
+  - type: dropdown
+    id: user-type
+    attributes:
+      label: User Perspective
+      description: From which user perspective is this documentation problematic?
+      options:
+        - New User - First time using HiveTechs Consensus
+        - Beginner - Basic experience with the tool
+        - Intermediate - Regular user with some experience
+        - Advanced - Power user with deep knowledge
+        - Enterprise Admin - Managing enterprise deployment
+        - Developer - Contributing to the project
+        - All Users - Affects everyone
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case Context
+      description: What were you trying to accomplish when you found this issue?
+      placeholder: |
+        Describe your use case:
+        - What task were you trying to complete?
+        - What information were you looking for?
+        - What workflow were you following?
+        - Where did you get stuck?
+
+  - type: textarea
+    id: examples-needed
+    attributes:
+      label: Examples Needed
+      description: What examples would be helpful?
+      placeholder: |
+        If examples would help, describe what you need:
+        - Code examples for specific use cases
+        - Command-line examples with output
+        - Configuration examples
+        - Step-by-step tutorials
+        - Screenshots or diagrams
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is fixing this documentation?
+      options:
+        - Low - Minor improvement, doesn't block work
+        - Medium - Causes confusion but workarounds exist
+        - High - Blocks important workflows or causes errors
+        - Critical - Prevents new users from getting started
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: User Impact
+      description: How does this documentation issue affect users?
+      placeholder: |
+        Describe the impact:
+        - How many users are likely affected?
+        - What problems does this cause?
+        - How much time do users waste?
+        - Does this prevent successful onboarding?
+
+  - type: textarea
+    id: research
+    attributes:
+      label: Research Done
+      description: What research did you do to find the correct information?
+      placeholder: |
+        Describe your research:
+        - Other documentation sources checked
+        - Community discussions found
+        - Support requests made
+        - Experimentation done
+        - External resources consulted
+
+  - type: checkboxes
+    id: related-areas
+    attributes:
+      label: Related Documentation Areas
+      description: What other documentation might need similar improvements?
+      options:
+        - label: Similar issues likely exist in related sections
+        - label: This affects multiple user guides
+        - label: API documentation needs updates too
+        - label: Error messages should be clarified
+        - label: Examples need to be added throughout
+        - label: Cross-references need to be added
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other information that would help improve the documentation
+      placeholder: |
+        Include any additional context:
+        - Screenshots of confusing interfaces
+        - Links to helpful external resources
+        - Community discussions about this topic
+        - Similar documentation from other tools
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to help write improved documentation
+        - label: I can provide technical review of documentation updates
+        - label: I can help test documentation improvements
+        - label: I can provide examples or use cases
+        - label: I have domain expertise that could help
