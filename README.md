@@ -3,7 +3,7 @@
 Official support repository for Hive Consensus, a commercial AI-powered development environment.
 
 **Website:** [hivetechs.io](https://hivetechs.io)
-**Documentation:** [hivetechs.io/docs](https://hivetechs.io/docs)
+**Documentation:** [hivetechs.io/documentation](https://hivetechs.io/documentation)
 **Community:** [GitHub Discussions](https://github.com/hivetechs-collective/hive-consensus-support/discussions)
 
 ---
@@ -43,13 +43,13 @@ brew install hivetechs-collective/tap/hive-consensus
 **via DMG**
 Download from [hivetechs.io/downloads](https://hivetechs.io/downloads)
 
-For complete installation instructions and system requirements, see the [Installation Guide](https://hivetechs.io/docs/installation).
+For complete installation instructions and system requirements, see the [Downloads page](https://hivetechs.io/downloads).
 
 ---
 
 ## Resources
 
-**Documentation:** [hivetechs.io/docs](https://hivetechs.io/docs)
+**Documentation:** [hivetechs.io/documentation](https://hivetechs.io/documentation)
 **Public Roadmap:** [docs/roadmap.md](docs/roadmap.md)
 **Product Information:** [hivetechs.io](https://hivetechs.io)
 
