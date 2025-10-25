@@ -1,139 +1,63 @@
 # Hive Consensus - Support & Feedback
 
-> The only IDE with 8 industry-leading AI tools fully integrated
+Official support repository for Hive Consensus, a commercial AI-powered development environment.
 
-**🌐 Website:** [hivetechs.io](https://hivetechs.io)
-**📖 Documentation:** [hivetechs.io/docs](https://hivetechs.io/docs)
-**💬 Community:** [GitHub Discussions](https://github.com/hivetechs-collective/hive-consensus-support/discussions)
+**Website:** [hivetechs.io](https://hivetechs.io)
+**Documentation:** [hivetechs.io/docs](https://hivetechs.io/docs)
+**Community:** [GitHub Discussions](https://github.com/hivetechs-collective/hive-consensus-support/discussions)
 
 ---
 
-## About Hive Consensus
+## About This Repository
 
-Hive Consensus is a commercial AI-powered IDE featuring:
+This repository is for bug reports, feature requests, and community support. The Hive Consensus codebase is closed-source and proprietary.
 
-### 🧠 Advanced Consensus System
-
-**4-model collaborative intelligence:**
-- **3 Discussion Models** analyze and debate your query
-- **1 Curator Model** synthesizes the final answer
-
-**Decision Logic:**
-- **Majority (2 agree):** Consensus opinion → Curator polishes the response
-- **Full Consensus (all 3 agree):** United response → Curator delivers polished answer
-- **Disagreement (all differ):** Curator arbitrates, selecting best from 3 responses + curator's own analysis
-
-This multi-model validation dramatically reduces AI hallucinations through collaborative reasoning.
-
-### 🤖 8 Integrated AI Tools
-
-- Claude Code
-- Gemini CLI
-- OpenAI Codex
-- Grok
-- Qwen Code
-- GitHub Copilot CLI
-- Cursor CLI
-- GitHub Spec Kit
-
-### 🌐 500+ Models from 60+ Providers
-
-Access the entire OpenRouter ecosystem through a unified consensus interface.
-
-### 🧠 Universal Memory System
-
-Shared knowledge base across all AI tools - what Claude learns, Gemini remembers.
-
-### 💻 VS Code-Like Interface
-
-- Monaco code editor with multi-cursor editing
-- TTYD-powered terminal with multiple sessions
-- Visual Git control with staging and branch management
-- Real-time consensus pipeline visualization
+For product information, features, and pricing, visit [hivetechs.io](https://hivetechs.io).
 
 ---
 
 ## Getting Support
 
-### 🐛 Found a Bug?
-[Report it here](https://github.com/hivetechs-collective/hive-consensus-support/issues/new?template=bug_report.yml)
+**Bug Reports**
+[File a bug report](https://github.com/hivetechs-collective/hive-consensus-support/issues/new?template=bug_report.yml)
 
-### 💡 Have a Feature Idea?
-[Suggest it here](https://github.com/hivetechs-collective/hive-consensus-support/issues/new?template=feature_request.yml)
+**Feature Requests**
+[Submit a feature request](https://github.com/hivetechs-collective/hive-consensus-support/issues/new?template=feature_request.yml)
 
-### ❓ Need Help?
-[Ask in Discussions](https://github.com/hivetechs-collective/hive-consensus-support/discussions)
+**Questions & Discussions**
+[Ask in GitHub Discussions](https://github.com/hivetechs-collective/hive-consensus-support/discussions)
 
-### 📧 Subscriber Support
+**Subscriber Support**
+Active subscribers: support@hivetechs.io (24-hour response)
 
-- **Email:** support@hivetechs.io (24-hour response)
-- **Security:** security@hivetechs.io (private vulnerabilities)
-
----
+**Security Issues**
+Report privately to: security@hivetechs.io
 
 ## Installation
 
-### via Homebrew (macOS)
-
+**via Homebrew (macOS)**
 ```bash
 brew install hivetechs-collective/tap/hive-consensus
 ```
 
-### via DMG Download
-
+**via DMG**
 Download from [hivetechs.io/downloads](https://hivetechs.io/downloads)
 
-**System Requirements:**
-- macOS 11.0+ (macOS 13+ recommended)
-- 8GB RAM minimum, 16GB recommended
-- OpenRouter API key (free tier available)
-
-For complete installation instructions, see [Installation Guide](https://hivetechs.io/docs/installation).
+For complete installation instructions and system requirements, see the [Installation Guide](https://hivetechs.io/docs/installation).
 
 ---
 
-## Documentation
+## Resources
 
-Full documentation at [hivetechs.io/docs](https://hivetechs.io/docs):
-- **Quick Start Guide** - Get up and running in 5 minutes
-- **Consensus Pipeline** - How the 4-model system works
-- **Memory Service** - Shared knowledge across AI tools
-- **API Reference** - Programmatic access
-- **Troubleshooting** - Common issues and solutions
+**Documentation:** [hivetechs.io/docs](https://hivetechs.io/docs)
+**Public Roadmap:** [docs/roadmap.md](docs/roadmap.md)
+**Product Information:** [hivetechs.io](https://hivetechs.io)
 
 ---
 
-## Roadmap
+## Beta Program
 
-See [docs/roadmap.md](docs/roadmap.md) for our public product roadmap.
-
-**Current Version:** v1.8
-**Next Release:** v1.9 (Rust backend migration - Q4 2025)
-
----
-
-## Beta Testing
-
-Interested in early access? Join our [Beta Program Discussion](https://github.com/hivetechs-collective/hive-consensus-support/discussions/categories/beta-program).
-
-**Beta Benefits:**
-- Early access to new features
-- Direct feedback channel to product team
-- Free subscription during beta period
-- Exclusive Discord channel
-
----
-
-## Pricing
-
-| Plan | Price | Features |
-|------|-------|----------|
-| Free | $0 | Basic consensus, 3 models |
-| Pro | $20/mo | Full consensus, all models |
-| Max | $30/mo | Priority support, advanced features |
-| Team | $120/mo | 5 developers, shared workspaces |
-
-All plans include 7-day free trial. [View detailed pricing](https://hivetechs.io/pricing)
+Interested in testing unreleased features? Apply in our [Beta Program Discussion](https://github.com/hivetechs-collective/hive-consensus-support/discussions/categories/beta-program)
 
 ---
 
