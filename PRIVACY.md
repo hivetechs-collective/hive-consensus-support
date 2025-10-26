@@ -46,7 +46,11 @@ HiveTechs Collective LLC has access to:
 **GDPR Compliance**:
 - **Data Controller for GitHub**: GitHub, Inc.
 - **Data Controller for Support Content**: HiveTechs Collective LLC
-- **Legal Basis**: Legitimate interest (community support and product improvement)
+- **Legal Basis**: Legitimate interest (GDPR Article 6.1.f) with balancing test:
+  - **Our Interest**: Product improvement, bug fixing, community support, transparent development
+  - **Necessity**: Public issues are essential for responsive product development and customer support
+  - **Balancing Test**: We process only public data you voluntarily post. You control visibility (close issues, delete comments). Our interest in product quality is balanced against your minimal privacy impact since we only process publicly-posted content.
+  - **Your Right to Object**: You can object to this processing by contacting privacy@hivetechs.io
 
 **Your Rights** (GDPR Articles 15-22):
 - **Right to Access**: Request a copy of data we have about you
@@ -61,9 +65,10 @@ HiveTechs Collective LLC has access to:
 - For GitHub data: Use GitHub's privacy tools or contact GitHub support
 
 **Data Retention**:
-- Public issues/comments: Retained indefinitely for product history (legitimate interest)
-- Deleted issues: We can delete our records upon request
-- GitHub retention: Governed by GitHub's policies
+- **Public issues/comments**: Retained for product history (legitimate interest in maintaining public support record). Our copies can be deleted upon request within 30 days, unless legal obligation requires retention (e.g., ongoing fraud investigation or legal dispute).
+- **Deleted/closed issues**: Removed from our internal systems within 30 days of deletion request
+- **GitHub retention**: Governed by GitHub's own retention policies (GitHub is separate controller)
+- **Consistent with main Privacy Policy**: See https://hivetechs.io/privacy for complete retention schedule
 
 **Supervisory Authority**:
 - EU users: Your local data protection authority
