@@ -78,9 +78,35 @@ Please be respectful and constructive in all interactions.
 
 ---
 
-## License
+## Privacy & Data Protection
 
-Hive Consensus is proprietary software.
+**Your Privacy Matters**: When you file issues or participate in discussions, GitHub and HiveTechs collect certain data. See our [PRIVACY.md](PRIVACY.md) for complete details.
+
+**International Compliance**:
+- ✅ GDPR (EU) - Full compliance
+- ✅ UK GDPR - Data Protection Act 2018
+- ✅ CCPA (California) - Privacy rights
+- ✅ PIPEDA (Canada) - Privacy rights
+- ✅ LGPD (Brazil) - Data protection
+
+**Privacy Requests**: privacy@hivetechs.io
+
+---
+
+## Legal Information
+
+**Software License**: Hive Consensus is proprietary software.
 © 2025 HiveTechs Collective LLC. All rights reserved.
 
-**Licensing inquiries:** sales@hivetechs.io
+**Terms & Policies**:
+- [Terms of Service](https://hivetechs.io/terms)
+- [Software License Agreement](https://hivetechs.io/software-license)
+- [Privacy Policy](https://hivetechs.io/privacy)
+- [Refund Policy](https://hivetechs.io/refund)
+- [Support Repository Privacy Notice](PRIVACY.md)
+
+**Contacts**:
+- Licensing inquiries: sales@hivetechs.io
+- Legal questions: legal@hivetechs.io
+- Privacy requests: privacy@hivetechs.io
+- Technical support: support@hivetechs.io
