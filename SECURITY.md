@@ -40,10 +40,6 @@ Hive Consensus implements enterprise-grade security:
 - **Local-first architecture** (your code never leaves your machine)
 - **Signed and notarized** (Apple code signing + notarization)
 
-## Bug Bounty Program
-
-Coming soon! We're planning a bug bounty program for security researchers. Stay tuned.
-
 ---
 
 Thank you for helping keep Hive Consensus secure! 🛡️
