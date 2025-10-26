@@ -1,26 +1,148 @@
-Proprietary Software License
+Hive Consensus Support Repository License
 
-Copyright (c) 2025 HiveTechs Collective LLC. All rights reserved.
+Copyright © 2025 HiveTechs Collective LLC. All Rights Reserved.
 
-This repository contains documentation and support materials for Hive Consensus,
-a commercial software product. The software itself is closed-source and proprietary.
+Last Updated: October 26, 2025
 
-RESTRICTIONS:
+=============================================================================
 
-1. The Hive Consensus software application is proprietary and closed-source.
-2. No license is granted to use, modify, or distribute the software.
-3. This repository is for issue tracking, feature requests, and community discussions only.
-4. Users must purchase a valid subscription to use Hive Consensus.
-5. Reverse engineering, decompilation, or disassembly of the software is prohibited.
+NOTICE: This repository contains documentation and support materials for
+Hive Consensus, a commercial software product. The software itself is
+closed-source and proprietary.
 
-DOCUMENTATION LICENSE:
+=============================================================================
 
-The documentation and support materials in this repository (README, issue templates,
-and other non-software content) may be read and referenced for support purposes.
+SOFTWARE LICENSE (HIVE CONSENSUS APPLICATION):
 
-For licensing inquiries and subscription information:
-- Website: https://hivetechs.io
-- Email: sales@hivetechs.io
+The Hive Consensus desktop application is proprietary software governed by a
+comprehensive international license agreement. This support repository does
+NOT grant any license to use, modify, or distribute the software.
 
-For questions about this license:
-- Email: legal@hivetechs.io
+RESTRICTIONS ON SOFTWARE:
+
+1. The Hive Consensus software is proprietary and closed-source
+2. No license is granted to use, copy, modify, or distribute the software
+3. Requires an active, paid subscription for use (14-day free trial available)
+4. Reverse engineering, decompilation, or disassembly is strictly prohibited
+5. Subject to complete license terms at: https://hivetechs.io/software-license
+
+=============================================================================
+
+SUPPORT REPOSITORY MATERIALS LICENSE:
+
+This repository (including README, issue templates, discussions, and other
+non-software content) is for:
+
+✅ Filing bug reports and feature requests
+✅ Community discussions and support
+✅ Beta testing coordination
+✅ Reviewing product roadmap
+
+The documentation and support materials in this repository may be read and
+referenced for support purposes. You may quote issues and discussions in
+accordance with fair use principles.
+
+=============================================================================
+
+INTERNATIONAL COMPLIANCE:
+
+By using this repository (filing issues, participating in discussions), you
+acknowledge that:
+
+- Your data is collected and processed per our Privacy Policy
+- GDPR, UK GDPR, CCPA, PIPEDA, and LGPD apply where relevant
+- See PRIVACY.md for complete data protection information
+- GitHub is a separate data controller for GitHub.com data
+
+Your Privacy Rights:
+- EU/UK: GDPR rights (access, deletion, portability, etc.)
+- California: CCPA rights (know, delete, opt-out)
+- Canada: PIPEDA rights
+- Brazil: LGPD rights
+
+Contact for privacy requests: privacy@hivetechs.io
+
+=============================================================================
+
+COMPLETE LEGAL FRAMEWORK:
+
+For complete terms governing Hive Consensus software and services:
+
+- Software License Agreement: https://hivetechs.io/software-license
+  (Comprehensive 844-line license - GDPR compliant, 172+ countries)
+
+- Terms of Service: https://hivetechs.io/terms
+  (Complete terms including arbitration, consumer protection, 14 sections)
+
+- Privacy Policy: https://hivetechs.io/privacy
+  (GDPR-compliant privacy with all 8 data subject rights)
+
+- Refund Policy: https://hivetechs.io/refund
+  (International refund rights - EU 14-day cooling-off + 15-day guarantee)
+
+- Support Repository Privacy Notice: PRIVACY.md
+  (This repository's data collection and GDPR compliance)
+
+=============================================================================
+
+CONTACT INFORMATION:
+
+HiveTechs Collective LLC
+7901 4TH St N Ste 300
+Saint Petersburg, FL 33702-4399
+United States
+
+Phone: +1 (813) 400-0871
+
+Email Contacts:
+- Licensing inquiries: sales@hivetechs.io
+- Legal questions: legal@hivetechs.io
+- Privacy requests: privacy@hivetechs.io
+- Technical support: support@hivetechs.io
+- General inquiries: hello@hivetechs.io
+
+Website: https://hivetechs.io
+
+=============================================================================
+
+TRIAL & SUBSCRIPTION:
+
+- Free Trial: 14-day free trial (no credit card required)
+- Subscription: Monthly or annual billing
+- Distribution: Homebrew, npm (future), direct download
+- Platforms: macOS (Apple Silicon + Intel)
+
+=============================================================================
+
+GLOBAL AVAILABILITY:
+
+Hive Consensus is available globally with full compliance for:
+- 🇪🇺 European Union (GDPR compliant)
+- 🇬🇧 United Kingdom (UK GDPR compliant)
+- 🇺🇸 United States (CCPA/Florida law compliant)
+- 🇨🇦 Canada (PIPEDA compliant)
+- 🇦🇺 Australia (ACL compliant)
+- 🇧🇷 Brazil (LGPD compliant)
+- And 172+ countries via international arbitration enforcement
+
+=============================================================================
+
+VIOLATIONS & ENFORCEMENT:
+
+Unauthorized use, copying, or distribution of Hive Consensus software is a
+violation of copyright law and may result in:
+- Civil legal action for damages
+- Injunctive relief
+- Recovery of attorney's fees and legal costs
+- Criminal prosecution under applicable law
+
+Report violations to: legal@hivetechs.io
+
+=============================================================================
+
+This license is effective immediately upon access to this repository.
+
+© 2025 HiveTechs Collective LLC. All Rights Reserved.
+
+LICENSE VERSION: 2.0 (Support Repository - International)
+EFFECTIVE DATE: October 26, 2025
