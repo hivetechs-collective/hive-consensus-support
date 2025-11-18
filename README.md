@@ -35,13 +35,30 @@ Report privately to: security@hivetechs.io
 
 ## Installation
 
+### Stable Release (Recommended)
+
 **via Homebrew (macOS)**
 ```bash
-brew install hivetechs-collective/tap/hive-consensus
+brew install --cask hivetechs/tap/hive-consensus
 ```
 
-**via DMG**
-Download from [hivetechs.io/downloads](https://hivetechs.io/downloads)
+**Update**
+```bash
+brew upgrade --cask hive-consensus
+```
+
+###  Beta Channel (Early Access)
+
+**via Homebrew (macOS)**
+```bash
+brew install --cask hivetechs/tap/hive-consensus-beta
+```
+
+Beta releases provide early access to new features before stable release. See [Beta Program](#beta-program) below.
+
+### Direct Download
+
+Download DMG from [hivetechs.io/downloads](https://hivetechs.io/downloads)
 
 For complete installation instructions and system requirements, see the [Downloads page](https://hivetechs.io/downloads).
 
@@ -57,7 +74,29 @@ For complete installation instructions and system requirements, see the [Downloa
 
 ## Beta Program
 
-Interested in testing unreleased features? Apply in our [Beta Program Discussion](https://github.com/hivetechs-collective/hive-consensus-support/discussions/categories/beta-program)
+Get early access to new features before they reach stable release:
+
+**Install Beta Channel**:
+```bash
+brew install --cask hivetechs/tap/hive-consensus-beta
+```
+
+**What You Get**:
+- Early access to new features
+- More frequent updates
+- Help shape Hive Consensus with your feedback
+- Same quality: All 9 quality gates as stable
+
+**Expectations**:
+- Production-ready but may occasionally contain issues
+- Not recommended for mission-critical work
+- Feedback appreciated via GitHub Issues
+
+**Verify You're Running Beta**:
+- Check **Hive Consensus > About Hive Consensus** (shows "Beta" indicator)
+- Check **Help > What's New** (detailed release notes)
+
+**Participate**: Join our [Beta Program Discussion](https://github.com/hivetechs-collective/hive-consensus-support/discussions/categories/beta-program)
 
 ---
 
